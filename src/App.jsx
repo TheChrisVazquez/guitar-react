@@ -1,16 +1,17 @@
-import Guitar from "../components/Guitar"
-import Header from "../components/Header"
+import { useState } from "react"
+import Guitar from "./components/Guitar"
+import Header from "./components/Header"
+import { db } from "./data/db"
 
 function App() {
+
+  const [data, setData] = useState(db)
 
   return (
     <>
       <Header />
       <main className="container-xl mt-5">
         <div className="row mt-5">
-          <Guitar />
-          <Guitar />
-          <Guitar />
           <Guitar />
         </div>
       </main>
