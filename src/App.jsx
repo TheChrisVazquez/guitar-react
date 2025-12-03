@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header cart={cart} />
       <main className="container-xl mt-5">
         <div className="row mt-5">
           {data.map((guitar) => (
